@@ -1,5 +1,7 @@
 $c-text: #353535;
 $c-white: #fff;
+$c-blue: #0c5c98;
+$c-blue-dark: #052f5f;
 $c-link: #337ab7;
 $bg-dark-grey: #272727;
 
@@ -27,7 +29,7 @@ header, section, footer {
 
 header {
 	position: relative;
-  background: linear-gradient(-45deg, #052f5f 0%, #0c5c98 100%);
+  background: linear-gradient(-45deg, $c-blue-dark 0%, $c-blue 100%);
   color: $c-white;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -75,4 +77,22 @@ p {
   width: 100%;
   height: auto;
   box-shadow: 0px 4px 8px 2px rgba(14,120,197,.2);
+}
+button,
+.button {
+	border-radius: $border-radius;
+	padding: 23px;
+	background: $c-blue;
+	font-family: $font-fam-default;
+  font-size: 18px;
+	color: $c-white;
+	font-size: 1rem;
+
+	&:hover,
+	&:active,
+	&.active {
+		cursor: pointer;
+		background: $c-blue-dark;
+		color: $c-white;
+	}
 }
