@@ -53,8 +53,6 @@ footer {
 }
 
 p, h1, h2, h3 {
-	padding: 0;
-	margin: 0;
   font-family: $font-fam-default;
 	font-weight: $font-weight-normal;
 }
@@ -69,4 +67,8 @@ p {
     font-family: $font-fam-default;
     font-size: 1rem;
     line-height: 1.7rem;
+}
+.image {
+  width: 100%;
+  height: auto;
 }
