@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #353535; }
+
+header, section, footer {
+  width: 100%;
+  position: relative; }
+
+header {
+  position: relative;
+  background: linear-gradient(-45deg, #052f5f 0%, #0c5c98 100%);
+  color: #fff;
+  padding: 20px 0; }
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+footer {
+  background: #272727;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center; }
+  footer .copyright {
+    padding-top: 30px; }
+    footer .copyright p {
+      font-size: .675rem;
+      line-height: 1rem; }
+
+p, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+
+a, a:visited {
+  color: #337ab7; }
+  a:hover, a:visited:hover {
+    color: #000;
+    cursor: pointer; }
+
+p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem; }
