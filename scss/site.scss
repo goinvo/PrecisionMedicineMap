@@ -1,6 +1,6 @@
 $c-text: #353535;
 $c-white: #fff;
-$c-link: #337ab7;
+$c-link: $c-white;
 $bg-dark-grey: #272727;
 
 $border-radius: 6px;
@@ -67,6 +67,7 @@ p {
     font-family: $font-fam-default;
     font-size: 1rem;
     line-height: 1.7rem;
+    max-width: 750px;
 }
 .image {
   width: 100%;
