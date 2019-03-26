@@ -12,22 +12,55 @@ header, section, footer {
 
 header {
   position: relative;
-  background: linear-gradient(-45deg, #052f5f 0%, #0c5c98 100%);
+  background: linear-gradient(-45deg, #162157 0%, #293772 100%);
   color: #fff;
   padding-top: 20px;
-  padding-bottom: 50px;
   margin-bottom: 30px; }
+  header h1 {
+    margin-bottom: 0; }
+
+.header-img {
+  overflow: hidden; }
+  .header-img img {
+    display: block;
+    width: 200vw;
+    margin-left: -50vw;
+    margin-top: -40px; }
+    @media only screen and (min-width: 500px) {
+      .header-img img {
+        width: 150vw;
+        margin-left: -37.5vw; } }
+    @media only screen and (min-width: 800px) {
+      .header-img img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0; } }
 
 .container {
   max-width: 1256px;
   margin: 0 auto;
   padding: 0 20px; }
+  @media only screen and (min-width: 800px) {
+    .container {
+      padding: 0 50px; } }
+
+.bold {
+  font-weight: bold; }
+
+.idea {
+  margin-top: 50px; }
+  .idea h2 {
+    margin-bottom: .25rem;
+    color: #162157; }
+  .idea p {
+    margin-top: 0; }
 
 footer {
   background: #272727;
   color: #fff;
   padding: 50px 0;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
   footer .copyright {
     padding-top: 30px; }
     footer .copyright p {
@@ -37,6 +70,12 @@ footer {
 p, h1, h2, h3 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400; }
+
+h1 {
+  font-size: 2em; }
+  @media only screen and (min-width: 800px) {
+    h1 {
+      font-size: 3em; } }
 
 a, a:visited {
   color: #337ab7; }
@@ -48,18 +87,44 @@ p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.7rem;
-  width: 750px; }
+  max-width: 750px; }
 
 .image {
   width: 100%;
-  height: auto;
-  box-shadow: 0px 4px 8px 2px rgba(14, 120, 197, 0.2); }
+  height: auto; }
+
+.sketch-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem; }
+  .sketch-row__wireframe {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    @media only screen and (min-width: 800px) {
+      .sketch-row__wireframe {
+        -ms-flex-preferred-size: 35%;
+            flex-basis: 35%;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; } }
+  .sketch-row__sketch {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .sketch-row--spacing > *:not(:first-of-type) {
+    margin-left: 20px; }
+  .sketch-row img {
+    width: 100%; }
+  @media only screen and (min-width: 800px) {
+    .sketch-row {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
 
 button,
 .button {
   border-radius: 6px;
   padding: 23px;
-  background: #0c5c98;
+  background: #293772;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   color: #fff;
@@ -69,5 +134,5 @@ button,
   .button:active,
   .button.active {
     cursor: pointer;
-    background: #052f5f;
+    background: #162157;
     color: #fff; }

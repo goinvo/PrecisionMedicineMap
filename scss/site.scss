@@ -1,7 +1,7 @@
 $c-text: #353535;
 $c-white: #fff;
-$c-blue: #0c5c98;
-$c-blue-dark: #052f5f;
+$c-blue: #293772;
+$c-blue-dark: #162157;
 $c-link: #337ab7;
 $bg-dark-grey: #272727;
 
@@ -32,14 +32,59 @@ header {
   background: linear-gradient(-45deg, $c-blue-dark 0%, $c-blue 100%);
   color: $c-white;
   padding-top: 20px;
-  padding-bottom: 50px;
   margin-bottom: 30px;
+
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+.header-img {
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 200vw;
+		margin-left: -50vw;
+		margin-top: -40px;
+
+		@media only screen and (min-width: 500px) {
+			width: 150vw;
+			margin-left: -37.5vw;
+		}
+
+		@media only screen and (min-width: 800px) {
+			width: 100%;
+			margin-left: 0;
+			margin-top: 0;
+		}
+	}
 }
 
 .container {
 	max-width: 1256px;
 	margin: 0 auto;
   padding: 0 20px;
+
+	@media only screen and (min-width: 800px) {
+		padding: 0 50px;
+	}
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.idea {
+	margin-top: 50px;
+
+	h2 {
+		margin-bottom: .25rem;
+		color: #162157;
+	}
+	p {
+		margin-top: 0;
+	}
 }
 
 footer {
@@ -47,6 +92,7 @@ footer {
   color: $c-white;
 	padding: 50px 0;
 	text-align: center;
+	margin-top: 20px;
 	.copyright {
 		padding-top: 30px;
 		p {
@@ -60,6 +106,13 @@ p, h1, h2, h3 {
   font-family: $font-fam-default;
 	font-weight: $font-weight-normal;
 }
+h1 {
+	font-size: 2em;
+
+	@media only screen and (min-width: 800px) {
+		font-size: 3em;
+	}
+}
 a, a:visited {
 	color: $c-link;
 	&:hover {
@@ -71,12 +124,46 @@ p {
     font-family: $font-fam-default;
     font-size: 1rem;
     line-height: 1.7rem;
-    width: 750px;
+		max-width: 750px;
 }
 .image {
-  max-width: 750px;
+	width: 100%;
+  // max-width: 750px;
   height: auto;
-  box-shadow: 0px 4px 8px 2px rgba(14,120,197,.2);
+  // box-shadow: 0px 4px 8px 2px rgba(14,120,197,.2);
+}
+
+.sketch-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+
+	&__wireframe {
+		flex-basis: 100%;
+
+		@media only screen and (min-width: 800px) {
+			flex-basis: 35%;
+			flex-shrink: 0;
+		}
+	}
+
+	&__sketch {
+		flex-basis: 100%;
+	}
+
+	&--spacing {
+		> *:not(:first-of-type) {
+			margin-left: 20px;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	@media only screen and (min-width: 800px) {
+		flex-wrap: nowrap;
+	}
 }
 button,
 .button {
