@@ -19,6 +19,10 @@ header {
   header h1 {
     margin-bottom: 0; }
 
+h2 {
+  margin-bottom: .25rem;
+  color: #162157; }
+
 .header-img {
   overflow: hidden; }
   .header-img img {
@@ -50,8 +54,7 @@ header {
 .idea {
   margin-top: 50px; }
   .idea h2 {
-    margin-bottom: .25rem;
-    color: #162157; }
+    margin-bottom: .25rem; }
   .idea p {
     margin-top: 0; }
 
