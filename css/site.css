@@ -101,7 +101,9 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  -ms-flex-pack: center;
+      justify-content: center; }
   .sketch-row__wireframe {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
@@ -114,6 +116,8 @@ p {
   .sketch-row__sketch {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
+    .sketch-row__sketch--tall {
+      max-width: 600px; }
   .sketch-row--spacing > *:not(:first-of-type) {
     margin-left: 20px; }
   .sketch-row img {
@@ -126,12 +130,12 @@ p {
 button,
 .button {
   border-radius: 6px;
-  padding: 23px;
-  background: #293772;
+  padding: 20px 40px;
+  background: #303E85;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: #fff;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
   button:hover, button:active, button.active,
   .button:hover,
   .button:active,
@@ -139,3 +143,7 @@ button,
     cursor: pointer;
     background: #162157;
     color: #fff; }
+
+.icon-description {
+  display: -ms-flexbox;
+  display: flex; }
